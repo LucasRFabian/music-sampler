@@ -25,7 +25,7 @@
                 <img class="img-fluid w-100" src="images/banner.jpg" alt="Photo of band taken with fisheye lens">
             </div>
         </div>
-        <!--Band Description-->
+        <!--Description-->
         <div class="row pt-5 pb-3 px-2">
             <div class="col-md-6 mx-auto">
                 <article class="fs-5">
@@ -42,21 +42,56 @@
             </div>
         </div>
         <!--Album Covers-->
-        <div class="row">
-            <div class="col-md-12 mx-auto text-center pb-3">
-                <img class="img-fluid flex-fill p-2" src="images/slipknot_1999.jpg" alt="Slipknot (1999) Album Cover">
-                <img class="img-fluid flex-fill p-2" src="images/the_subliminal_verses.jpg" alt="Vol. 3: The Subliminal Verses Album Cover">
-                <img class="img-fluid flex-fill p-2" src="images/all_hope_is_gone.jpg" alt="All Hope is Gone Album Cover">
-                <img class="img-fluid flex-fill p-2" src="images/we_are_not_your_kind.png" alt="We Are Not Your Kind Album Cover">
+        <div class="row pb-2 text-center">
+            <div class="col-md-3 mx-auto">
+                <img class="img-fluid p-1 albumCover" id="slipknot1999" src="images/slipknot_1999.jpg" alt="Slipknot (1999) Album Cover">
+            </div>
+            <div class="col-md-3 mx-auto">
+                <img class="img-fluid p-1 albumCover" id="subliminalVerses" src="images/the_subliminal_verses.jpg" alt="Vol. 3: The Subliminal Verses Album Cover">
+            </div>
+            <div class="col-md-3 mx-auto">
+                <img class="img-fluid p-1 albumCover" id="allHopeIsGone" src="images/all_hope_is_gone.jpg" alt="All Hope is Gone Album Cover">
+            </div>
+            <div class="col-md-3 mx-auto">
+                <img class="img-fluid p-1 albumCover" id="weAreNotYourKind" src="images/we_are_not_your_kind.png" alt="We Are Not Your Kind Album Cover">
+            </div>
+        </div>
+        <!--Media Player-->
+        <div class="row pb-1">
+            <div class="col d-flex">
+                <audio class="flex-fill mediaPlayer waitAndBleed" controls preload="auto"> 
+                    <source src="audio/wait_and_bleed.mp3" type="audio/mp3"> 
+                    <source src="audio/wait_and_bleed.ogg" type="audio/ogg"> 
+                </audio>
+                <audio class="flex-fill mediaPlayer duality" controls preload="auto"> 
+                    <source src="audio/duality.mp3" type="audio/mp3"> 
+                    <source src="audio/duality.ogg" type="audio/ogg"> 
+                </audio>
+                <audio class="flex-fill mediaPlayer snuff" controls preload="auto"> 
+                    <source src="audio/snuff.mp3" type="audio/mp3"> 
+                    <source src="audio/snuff.ogg" type="audio/ogg"> 
+                </audio>
+                <audio class="flex-fill mediaPlayer neroForte" controls preload="auto"> 
+                    <source src="audio/nero_forte.mp3" type="audio/mp3"> 
+                    <source src="audio/nero_forte.ogg" type="audio/ogg">
+                </audio>
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="col text-center fs-5">
+                <p class="mediaPlayer textOne">Slipknot - Wait and Bleed</p>
+                <p class="mediaPlayer textTwo">Slipknot - Duality</p>
+                <p class="mediaPlayer textThree">Slipknot - Snuff</p>
+                <p class="mediaPlayer textFour">Slipknot - Nero Forte</p>
             </div>
         </div>
         <!--Credits-->
         <div class="row">
             <div class="col text-center">
                 <footer class="lh-1 fw-light text-secondary">
-                    <h2 class="fs-5 pb-1">Image Credits</h2>
-                    <p>Logo: AgnusLegis, CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Before_I_Forget_Logo.png">Wikimedia Commons</a></p>
-                    <p class="pb-3">Banner: tricks ware, CC BY-NC-ND 2.0, via <a href="https://flic.kr/p/ojdgGs">Flickr</a></p>
+                    <h2 class="fs-5 pb-1">Credits</h2>
+                    <p>Logo by AgnusLegis, CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Before_I_Forget_Logo.png">Wikimedia Commons</a></p>
+                    <p class="pb-3">Banner by tricks ware, CC BY-NC-ND 2.0, via <a href="https://flic.kr/p/ojdgGs">Flickr</a></p>
                     <p>Page by Lucas Fabian (<a href="https://github.com/LucasRFabian/music-sampler">https://github.com/LucasRFabian/music-sampler</a>)</p>
                 </footer> 
             </div>
@@ -65,5 +100,6 @@
 
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
